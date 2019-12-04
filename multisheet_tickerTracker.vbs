@@ -2,6 +2,7 @@ Sub buttonClick()
 'function to run though worksheets
     Dim xSh As Worksheet
     Application.ScreenUpdating = False
+    'for loop to go through worksheets
     For Each xSh In Worksheets
         xSh.Select
         'calls function that assesses stock tickers
