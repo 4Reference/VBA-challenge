@@ -1,8 +1,10 @@
 Sub buttonClick()
+'function to run though worksheets
     Dim xSh As Worksheet
     Application.ScreenUpdating = False
     For Each xSh In Worksheets
         xSh.Select
+        'calls function that assesses stock tickers
         Call tickerTracker
     Next
     Application.ScreenUpdating = True
